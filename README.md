@@ -63,11 +63,11 @@ Le back-end gére les API REST suivantes :
   spring.datasource.password=Hq7b6yUBTS6h9Fb86nuX46JR9x53vhzQ
 
 - Configuration du driver dans pom.xml ( A changer si autre BDD )
-  <dependency>
+  "<dependency>
   <groupId>org.postgresql</groupId>
   <artifactId>postgresql</artifactId>
   <version>42.6.0</version>
-  </dependency>
+  </dependency>"
 
 # Script sql
 
