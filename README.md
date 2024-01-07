@@ -58,16 +58,16 @@ Le back-end gére les API REST suivantes :
 # Configuration nécessaire pour la data Source
 
 - Configuration du fichier application.properties ( A changer si autre BDD )
-  spring.datasource.url=jdbc:postgresql://localhost:5432/altenshop
-  spring.datasource.username=postgres
-  spring.datasource.password=Hq7b6yUBTS6h9Fb86nuX46JR9x53vhzQ
+-   spring.datasource.url=jdbc:postgresql://localhost:5432/altenshop
+-   spring.datasource.username=postgres
+-   spring.datasource.password=Hq7b6yUBTS6h9Fb86nuX46JR9x53vhzQ
 
 - Configuration du driver dans pom.xml ( A changer si autre BDD )
-  "<dependency>
-  <groupId>org.postgresql</groupId>
-  <artifactId>postgresql</artifactId>
-  <version>42.6.0</version>
-  </dependency>"
+-   <dependency>
+-   <groupId>org.postgresql</groupId>
+-   <artifactId>postgresql</artifactId>
+-   <version>42.6.0</version>
+-   </dependency>
 
 # Script sql
 
