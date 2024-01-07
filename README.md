@@ -58,19 +58,23 @@ Le back-end gére les API REST suivantes :
 # Configuration nécessaire pour la data Source
 
 - Configuration du fichier application.properties ( A changer si autre BDD )
--   spring.datasource.url=jdbc:postgresql://localhost:5432/altenshop
--   spring.datasource.username=postgres
--   spring.datasource.password=Hq7b6yUBTS6h9Fb86nuX46JR9x53vhzQ
+```properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/altenshop
+spring.datasource.username=postgres
+spring.datasource.password=Hq7b6yUBTS6h9Fb86nuX46JR9x53vhzQ
 
 - Configuration du driver dans pom.xml ( A changer si autre BDD )
--   <dependency>
--   <groupId>org.postgresql</groupId>
--   <artifactId>postgresql</artifactId>
--   <version>42.6.0</version>
--   </dependency>
+```xml
+<dependency>
+<groupId>org.postgresql</groupId>
+<artifactId>postgresql</artifactId>
+<version>42.6.0</version>
+</dependency>
+```
 
 # Script sql
 
+```sql
 CREATE TABLE product(
 id INTEGER NOT NULL PRIMARY KEY
 ,code VARCHAR(9) NOT NULL
@@ -114,3 +118,4 @@ INSERT INTO product(id,code,name,description,image,price,category,quantity,statu
 INSERT INTO product(id,code,name,description,image,price,category,quantity,status,rating) VALUES (1027,'acvx872gc','Yellow Earbuds','Product Description','yellow-earbuds.jpg',89,'Electronics',35,'INSTOCK',3);
 INSERT INTO product(id,code,name,description,image,price,category,quantity,status,rating) VALUES (1028,'tx125ck42','Yoga Mat','Product Description','yoga-mat.jpg',20,'Fitness',15,'INSTOCK',5);
 INSERT INTO product(id,code,name,description,image,price,category,quantity,status,rating) VALUES (1029,'gwuby345v','Yoga Set','Product Description','yoga-set.jpg',20,'Fitness',25,'INSTOCK',8);
+```
