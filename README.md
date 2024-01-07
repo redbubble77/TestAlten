@@ -61,7 +61,7 @@ Le back-end gére les API REST suivantes :
 ```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/altenshop
 spring.datasource.username=postgres
-spring.datasource.password=Hq7b6yUBTS6h9Fb86nuX46JR9x53vhzQ
+spring.datasource.password=***********************
 ```
 
 - Configuration du driver dans pom.xml ( A changer si autre BDD )
