@@ -18,8 +18,8 @@ class Product {
   quantity: number;
   inventoryStatus: string;
   category: string;
-  image?: string;
-  rating?: number;
+  image: string;
+  rating: number;
 }
 ```
 
@@ -62,6 +62,7 @@ Le back-end gére les API REST suivantes :
 spring.datasource.url=jdbc:postgresql://localhost:5432/altenshop
 spring.datasource.username=postgres
 spring.datasource.password=Hq7b6yUBTS6h9Fb86nuX46JR9x53vhzQ
+```
 
 - Configuration du driver dans pom.xml ( A changer si autre BDD )
 ```xml
